@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<div class="ui stackable grid container">
+	<% types.forEach(function(type){ %>
+		<div class="five wide tablet column">
+			<div class="ui raised segment">
+				<a href="/types/<%= type.name %>">
+					<img class="ui image" src="<%= type.image %>">
+				</a>
+			</div>
+		</div>
+	<% }); %>
+</div>
+
+<% include partials/footer %>
